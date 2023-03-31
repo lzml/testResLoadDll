@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SourceFile">
+      <UniqueIdentifier>{67c62e7d-fbc5-4403-8b2d-d82fdf62c367}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="HeaderFile">
+      <UniqueIdentifier>{211e08a2-3c14-450f-92b2-41ff968143a8}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="ResourceFile">
+      <UniqueIdentifier>{4962a9d0-0b80-4770-8fc1-25fbe816eeaa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MemoryModule.c">
+      <Filter>SourceFile</Filter>
+    </ClCompile>
+    <ClCompile Include="testLoadDll.cpp">
+      <Filter>SourceFile</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MemoryModule.h">
+      <Filter>HeaderFile</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>HeaderFile</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="testLoadDll.rc">
+      <Filter>ResourceFile</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="xDll.dll">
+      <Filter>ResourceFile</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
